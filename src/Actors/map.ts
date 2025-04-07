@@ -14,6 +14,5 @@ export class TestMap extends Actor {
 
   onInitialize(engine: Engine): void {
     this.graphics.use(Resources.map.toSprite());
-    engine.currentScene.camera.strategy.lockToActor(this);
   }
 }

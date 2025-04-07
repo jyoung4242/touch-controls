@@ -13,9 +13,9 @@ await UI.create(document.body, model, template).attached;
 
 const game = new Engine({
   canvasElementId: "cnv", // the DOM canvas element ID, if you are providing your own
-  viewport: { width: 224, height: 208 },
-  resolution: { width: 224, height: 208 },
-  displayMode: DisplayMode.FitScreen, // the display mode
+  viewport: { width: 320, height: 288 },
+  resolution: { width: 320, height: 288 },
+  displayMode: DisplayMode.FitScreenAndFill, // the display mode
   pixelArt: true,
   pixelRatio: 3,
 });

@@ -12,5 +12,7 @@ export class Dude extends Actor {
   }
   onInitialize(engine: Engine): void {
     this.graphics.use(Resources.dude.toSprite());
+    engine.currentScene.camera.strategy.lockToActor(this);
+    engine.currentScene.camera.zoom = 2.0;
   }
 }
