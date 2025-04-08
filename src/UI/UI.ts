@@ -5,7 +5,7 @@ export const model = {
 export const template = `
 <div> 
     <style>
-        canvas{
+        #cnv{
             position: fixed;
             top:50%;
             left:50%;
