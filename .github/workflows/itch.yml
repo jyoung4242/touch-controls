@@ -34,9 +34,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # npm version major --no-git-tag-version for npm version minor --no-git-tag-version
       - name: Bump version
         run: |
-          npm version patch --no-git-tag-version
+          npm version patch --no-git-tag-version 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add package.json
